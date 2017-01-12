@@ -14,9 +14,10 @@ RUN apt-get install git -y
 RUN apt-get install cmake -y
 RUN apt-get install vim -y
 RUN apt-get install gcc -y
+RUN apt-get install g++ -y
 RUN locale-gen zh_CN.UTF-8 &&\
   DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
 RUN locale-gen zh_CN.UTF-8  
 ENV LANG zh_CN.UTF-8  
 ENV LANGUAGE zh_CN:zh  
-ENV LC_ALL zh_CN.UTF-8  
+ENV LC_ALL zh_CN.UTF-8
